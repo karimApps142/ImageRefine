@@ -10,7 +10,7 @@ import { handleError } from "../utils";
 export async function createUser(user: CreateUserParams) {
     try {
       const newUser = await prisma.user.create({
-        data: user,
+        data:user,
       });
   
       return newUser; // No need to stringify/parse with Prisma
